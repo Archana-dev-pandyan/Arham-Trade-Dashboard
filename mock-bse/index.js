@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const DELAY = Number(process.argv[2] ?? process.env.PULL_DELAY_MS ?? 900000); // 15 min default
-const BATCH = 500;
+const BATCH = 3000;
 const clients = ["ABC Capital", "XYZ Traders", "Orion Funds", "Delta Securities", "Nova Wealth"];
 const symbols = [["TCS", 3400], ["INFY", 1500], ["RELIANCE", 2850], ["HDFCBANK", 1650], ["ITC", 430], ["SBIN", 780]];
 let batchNo = 0;
